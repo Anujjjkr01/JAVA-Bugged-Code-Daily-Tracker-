@@ -1,0 +1,64 @@
+-------------------------------------------------------------------------------
+Test set: com.taskmanager.BugHuntTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.620 s <<< FAILURE! -- in com.taskmanager.BugHuntTest
+com.taskmanager.BugHuntTest.bug3_createTaskWithNotesShouldSetNotes -- Time elapsed: 0.012 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Notes should be set to the provided value, not null or timezone ==> expected: <Include receipts from conference> but was: <null>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at com.taskmanager.BugHuntTest.bug3_createTaskWithNotesShouldSetNotes(BugHuntTest.java:65)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.taskmanager.BugHuntTest.bug1_defaultPriorityShouldBeMedium -- Time elapsed: 0.008 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Priority should default to MEDIUM when null is provided ==> expected: <MEDIUM> but was: <LOW>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at com.taskmanager.BugHuntTest.bug1_defaultPriorityShouldBeMedium(BugHuntTest.java:42)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.taskmanager.BugHuntTest.bug6_markCompleteShouldSetTimestamp -- Time elapsed: 0.007 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Completion timestamp should be set when task is marked complete ==> expected: not <null>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertNotNull.failNull(AssertNotNull.java:49)
+	at org.junit.jupiter.api.AssertNotNull.assertNotNull(AssertNotNull.java:35)
+	at org.junit.jupiter.api.Assertions.assertNotNull(Assertions.java:312)
+	at com.taskmanager.BugHuntTest.bug6_markCompleteShouldSetTimestamp(BugHuntTest.java:114)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.taskmanager.BugHuntTest.bug5_foodTaskDefaultMealTypeShouldBeLunch -- Time elapsed: 0.013 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Default meal type should be LUNCH when null is provided ==> expected: <LUNCH> but was: <BREAKFAST>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at com.taskmanager.BugHuntTest.bug5_foodTaskDefaultMealTypeShouldBeLunch(BugHuntTest.java:101)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.taskmanager.BugHuntTest.bug2_timezoneShouldNotBeTruncated -- Time elapsed: 0.011 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Timezone should store the full IANA timezone ID without truncation ==> expected: <America/New_York> but was: <America/Ne>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at com.taskmanager.BugHuntTest.bug2_timezoneShouldNotBeTruncated(BugHuntTest.java:53)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

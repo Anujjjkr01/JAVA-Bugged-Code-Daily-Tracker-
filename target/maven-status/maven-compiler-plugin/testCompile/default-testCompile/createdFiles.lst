@@ -1,0 +1,9 @@
+com\taskmanager\service\TaskParserTest.class
+com\taskmanager\service\FilterTest.class
+com\taskmanager\model\TravelTaskTest.class
+com\taskmanager\model\TaskTest.class
+com\taskmanager\service\SummaryGeneratorTest.class
+com\taskmanager\service\TaskManagerTest.class
+com\taskmanager\BugHuntTest.class
+com\taskmanager\model\FoodTaskTest.class
+com\taskmanager\service\PrettyPrinterTest.class
